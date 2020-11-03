@@ -925,7 +925,7 @@ According to Matt Parker Vampire Mtrices are those matrices which follow the pat
 
 <br>
 
-<img src="https://latex.codecogs.com/gif.latex?\dpi{500}\Large&space;\begin{pmatrix}62&31\\78&39\end{pmatrix}\times\begin{pmatrix}62&31\\78&39\end{pmatrix}=\begin{pmatrix}6262&3131\\7878&3939\end{pmatrix}" alt="matrix">
+<img src="https://latex.codecogs.com/gif.latex?\dpi{200}\Large&space;\begin{pmatrix}62&31\\78&39\end{pmatrix}\times\begin{pmatrix}62&31\\78&39\end{pmatrix}=\begin{pmatrix}6262&3131\\7878&3939\end{pmatrix}" alt="matrix">
 
 <br>
 <br>
