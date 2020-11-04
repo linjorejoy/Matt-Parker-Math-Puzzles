@@ -31,15 +31,15 @@ def generateVampirematrices(order):
                             f = i * d / g
                             b = c * e / f
                             if(isInt(h) and isInt(f) and isInt(b)
-                            and lowerLimit < a < upperLimit
-                            and lowerLimit < b < upperLimit
-                            and lowerLimit < c < upperLimit
-                            and lowerLimit < d < upperLimit
-                            and lowerLimit < e < upperLimit
-                            and lowerLimit < f < upperLimit
-                            and lowerLimit < g < upperLimit
-                            and lowerLimit < h < upperLimit
-                            and lowerLimit < i < upperLimit
+                            and lowerLimit <= a < upperLimit
+                            and lowerLimit <= b < upperLimit
+                            and lowerLimit <= c < upperLimit
+                            and lowerLimit <= d < upperLimit
+                            and lowerLimit <= e < upperLimit
+                            and lowerLimit <= f < upperLimit
+                            and lowerLimit <= g < upperLimit
+                            and lowerLimit <= h < upperLimit
+                            and lowerLimit <= i < upperLimit
                             ):
                                 yield("|%d, %d, %d|\n|%d, %d, %d|\n|%d, %d, %d|\n\n" % (a,b,c,d,e,f,g,h,i))
                         
@@ -53,4 +53,4 @@ def writeToFile(fileName, order):
 
 
 
-writeToFile("SPOOKY MATHS/vampire_matrices_2ndOrder3x3.txt", 2)
+writeToFile("SPOOKY MATHS/vampire_matrices_1stOrder3x3.txt", 1)
