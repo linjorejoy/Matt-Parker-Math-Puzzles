@@ -48,9 +48,12 @@ def generateVampirematrices(order):
 def writeToFile(fileName, order):
     gen = generateVampirematrices(order)
     with open(fileName, 'w') as file:
+        count = 0
         for line in gen:
+            count += 1
             file.write(str(line))
+        file.write("Total Matrices Found : " + str(count))
 
 
 
-writeToFile("SPOOKY MATHS/vampire_matrices_1stOrder3x3.txt", 1)
+writeToFile("SPOOKY MATHS/vampire_matrices_2ndOrder3x3.txt", 2)
