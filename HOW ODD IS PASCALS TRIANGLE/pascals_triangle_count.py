@@ -8,11 +8,11 @@ def length(list) -> float:
         leng += 1
     return leng
 
-def nthRowPascalsTriangle(n, upperLimit=1000000):
+def nthRowPascalsTriangle(n, upperLimit=1000000000):
     term = 1
     for i in range(n + 1):
         if term <= upperLimit:
-            yield (term, n)
+            yield (round(term), n)
         term = (term / (i + 1))*(n - i)
 
 
@@ -35,16 +35,21 @@ def getCountsUntilRow(rowNum, threshhold):
 
 
 def writeToFile(fileName, rowNum, threshhold):
-    dictionary = OrderedDict()
+    # dictionary = OrderedDict()
     dictionary = getCountsUntilRow(rowNum, threshhold)
+    orderedDictionary = OrderedDict(dictionary)
 
     with open(fileName,'w') as file:
-        for num in dictionary:
-            if length(dictionary.get(num)) >= threshhold and round(num) > 1:
-                file.write("{:>20} : ".format(round(num)))
+        for num in orderedDictionary:
+            if length(orderedDictionary.get(num)) >= threshhold and round(num) > 1:
+                file.write("{:>15} :\t\t".format(round(num)))
+                file.write("{:>4}\t\t".format(len(orderedDictionary[num])))
+                file.write("{:30}\n".format(str(orderedDictionary[num])))
 
-                file.write(str(dictionary[num]))
-                file.write("\n")
 
+# writeToFile("HOW ODD IS PASCALS TRIANGLE/count_upto_25000.txt",25000, 3)
+gen = nthRowPascalsTriangle(3003)
 
-writeToFile("HOW ODD IS PASCALS TRIANGLE/count_upto_1500.txt",1500, 3)
+for num in gen:
+    print(num)
+
