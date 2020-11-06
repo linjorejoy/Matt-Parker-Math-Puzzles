@@ -23,6 +23,7 @@ def nthRowPascalsTriangle(n, upperLimit=10000000000):
 
 def getCountAndWriteToFile(fileName, uptoRowNum, threshhold):
     with open(fileName, 'w') as file:
+        file.write("Pascals Triangle Row Upto : {} with more than {} repetitions\n\n".format(uptoRowNum, threshhold))
         countOfnums = OrderedDict()
         for i in range(uptoRowNum+1):
             gen = nthRowPascalsTriangle(i)
@@ -50,7 +51,7 @@ def getCountAndWriteToFile(fileName, uptoRowNum, threshhold):
     
 
 
-getCountAndWriteToFile("HOW ODD IS PASCALS TRIANGLE/count_upto_1000000_v2.txt",1000000,4)
+getCountAndWriteToFile("HOW ODD IS PASCALS TRIANGLE/count_upto_100_v2.txt",100,3)
 
 
 

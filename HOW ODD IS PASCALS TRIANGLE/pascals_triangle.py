@@ -33,4 +33,4 @@ def writeToFile(fileName, nthRow):
         file.write("\nEven Percentage {:>8}".format(evenCount/total))
 
 
-writeToFile("HOW ODD IS PASCALS TRIANGLE/details_of_10000_numbers.txt", 10000)
+writeToFile("HOW ODD IS PASCALS TRIANGLE/details_of_200_numbers.txt", 200)
