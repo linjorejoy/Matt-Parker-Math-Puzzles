@@ -1,3 +1,5 @@
+Pascals Triangle Row Upto : 1000000 with more than or equal to 4 repetitions
+
              10 :		   4		[5, 5, 10, 10]                
              15 :		   4		[6, 6, 15, 15]                
              21 :		   4		[7, 7, 21, 21]                

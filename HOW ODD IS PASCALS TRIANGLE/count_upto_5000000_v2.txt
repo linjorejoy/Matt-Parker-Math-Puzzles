@@ -1,4 +1,4 @@
-Pascals Triangle Row Upto : 5000000 with more than 5 repetitions
+Pascals Triangle Row Upto : 5000000  with more than or equal to 5 repetitions
 
             120 :		   6		[10, 10, 16, 16, 120, 120]    
             210 :		   6		[10, 10, 21, 21, 210, 210]    
