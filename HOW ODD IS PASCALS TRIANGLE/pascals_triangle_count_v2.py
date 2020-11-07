@@ -8,7 +8,7 @@ def length(list) -> float:
         leng += 1
     return leng
 
-def nthRowPascalsTriangle(n, upperLimit=10000000000):
+def nthRowPascalsTriangle(n, upperLimit=1e308):
     term = 1
     for i in range(math.ceil( (n + 1) / 2) ):
         if term <= upperLimit:
@@ -52,7 +52,8 @@ def getCountAndWriteToFile(fileName, uptoRowNum, threshhold):
     
 
 
-getCountAndWriteToFile("HOW ODD IS PASCALS TRIANGLE/count_upto_1000000_v2.txt",1000000,4)
+getCountAndWriteToFile("count_upto_100000_v2.txt",100000,4)
+
 
 
 

@@ -74,6 +74,8 @@ def possible(i, j, num):
                 return False
         else:
             break
+    
+    
         
     unique, counts = np.unique(GRID, return_counts=True)
     dictionary = dict(zip(unique, counts))
