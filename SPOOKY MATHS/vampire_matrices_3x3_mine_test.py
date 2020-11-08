@@ -63,11 +63,12 @@ def checkAllValues(order):
         else:
             countNotVampire += 1
             # print("|{} {} {}|\n|{} {} {}|\n|{} {} {}| is vampire\n".format(int(a), int(b), int(c), int(d), int(e), int(f), int(g), int(h), int(i)))
-        if count > 50000:
-            break
-
+        if count % 10000 == 0:
+            print("Total Generated : {}\nTotal Vampire : {}\nTotal Non-Vamire : {}".format(count, countVampire, countNotVampire))
+            print("Approx Total Completed : {} % ->{} ".format( (a-10**(order-1))*100/(10**order-10**(order-1)),a))
     print("Total Generated : {}\nTotal Vampire : {}\nTotal Non-Vamire : {}".format(count, countVampire, countNotVampire))
+    print("Approx Total Completed : {} % ->{} ".format( (a-10**(order-1))*100/(10**order-10**(order-1)),a))
 
 
 
-checkAllValues(3)
+checkAllValues(2)
